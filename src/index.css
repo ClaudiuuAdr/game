@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .unu {
+    @apply absolute bottom-[-20px] left-[50%] z-[2] 
+    flex h-0 w-0 shrink-0 skew-y-[20deg]  border-b-[23px]  border-l-[23px] 
+    border-r-[23px] border-t-[23px] border-solid border-b-gray-500 border-l-gray-500  border-r-gray-500  border-t-gray-500 md:hidden;
+  }
+  .doi {
+    @apply absolute bottom-[-20px] right-[49.8%] z-[2] mx-auto 
+    h-0 w-0 skew-y-[-20deg] border-b-[23px] border-l-[23px]  border-r-[23px]  border-t-[23px] 
+    border-solid border-b-gray-500 border-l-gray-500  border-r-gray-500 border-t-gray-500 md:hidden;
+  }
+}
+
+@layer components {
+  .mda {
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
+    margin-bottom: -6vw;
+  }
+}
