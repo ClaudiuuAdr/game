@@ -25,10 +25,10 @@ function Login() {
   }
   return (
     <section>
-      <div className=" z-10 mx-auto flex items-center justify-center rounded-md border-slate-600 bg-slate-200 bg-opacity-30 p-14 shadow-lg backdrop-filter backdrop:blur-lg md:w-[500px]">
+      <div className=" z-10 mx-auto flex  items-center justify-center rounded-md border-slate-600 bg-slate-200 bg-opacity-30 p-14 shadow-lg backdrop-filter backdrop:blur-lg md:w-[500px]">
         <form onSubmit={handleSubmit}>
           <h2 className="text-center text-4xl font-bold">Login</h2>
-          <div className="mt-7 flex items-center justify-center gap-4">
+          <div className="mt-7 flex items-center justify-center">
             <label htmlFor={id + "-name"} className="mx-[10px]">
               Name:
             </label>
@@ -42,7 +42,7 @@ function Login() {
               className="w-72 appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm focus:border-slate-600 focus:text-slate-600 focus:outline-none focus:ring-0 dark:focus:border-blue-500 "
             />
           </div>
-          <div className="flex items-center justify-center gap-4 ">
+          <div className=" flex items-center justify-center">
             <label htmlFor={id + "-pass"}>Passowrd:</label>
             <input
               type="password"

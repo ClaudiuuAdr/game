@@ -11,6 +11,7 @@ import Esports from "./Pages/Esports";
 import Home from "./Pages/Home";
 import Games from "./Pages/Games";
 import Game from "./Pages/Game";
+import Error from "./Pages/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/esports" element={<Esports />} />
       <Route path="/games" element={<Games />} />
       <Route path="games/:title" element={<Game />} />
+      <Route path="*" element={<Error />} />
     </Route>,
   ),
 );
