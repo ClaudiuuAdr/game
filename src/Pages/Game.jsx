@@ -60,12 +60,16 @@ function Game() {
           </button>
         </div>
       )}
-      <div className="xs:max-w-[650px] mx-auto mt-3 px-3 hover:shadow-xl xl:shadow-md">
+      <div className="flex flex-col px-7 md:items-center md:px-0">
         <h2 className="  pb-5 pt-6 text-3xl font-semibold md:text-4xl">
           {cards.title}
         </h2>
-        <div className="xs:flex items-center gap-5">
-          <img src={cards.thumbnail} alt={cards.title} className="w-full" />
+        <div className="xs:flex justify-center gap-5">
+          <img
+            src={cards.thumbnail}
+            alt={cards.title}
+            className=" w-[500px] md:w-[100%]"
+          />
 
           <div>
             <p>
@@ -81,7 +85,7 @@ function Game() {
             </p>
           </div>
         </div>
-        <p className="mb-3">
+        <p className="mb-3 md:max-w-[365px]">
           <span className="font-semibold">Description:</span>{" "}
           {cards.short_description}
         </p>
