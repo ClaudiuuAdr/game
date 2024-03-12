@@ -1,7 +1,11 @@
-import { ReactTyped } from 'react-typed';
-import Slider from '../Components/Slider';
+import { ReactTyped } from "react-typed";
+import Slider from "../Components/Slider";
+import { useEffect } from "react";
 
 function Hero() {
+  useEffect(() => {
+    document.title = "Api Games";
+  });
   return (
     <>
       <section className=" mda bg-slate-500 py-20" id="Home">
@@ -14,7 +18,7 @@ function Hero() {
               If you dont play you can watch {}
               <ReactTyped
                 className="pb-3 text-2xl font-bold md:text-4xl lg:text-5xl"
-                strings={['League of Legends', 'CS2', 'Dota', 'and others']}
+                strings={["League of Legends", "CS2", "Dota", "and others"]}
                 typeSpeed={200}
                 backSpeed={200}
                 loop
